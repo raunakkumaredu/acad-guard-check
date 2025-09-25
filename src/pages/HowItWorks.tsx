@@ -40,11 +40,11 @@ const HowItWorks = () => {
       icon: Database,
       title: "Database Verification",
       description: "Cross-reference against verified academic records",
-        details: [
-          "Cross-reference with 420+ verified institutions globally",
-          "Intelligent matching algorithms with error tolerance",
-          "Real-time queries against authoritative databases"
-        ]
+      details: [
+        "Match against 500+ partner institutions",
+        "Fuzzy matching for OCR error tolerance",
+        "Real-time database queries"
+      ]
     },
     {
       icon: Shield,
@@ -195,20 +195,20 @@ const HowItWorks = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Average Processing</span>
-                    <span className="font-semibold">6.2 seconds</span>
+                    <span className="text-muted-foreground">Processing Time</span>
+                    <span className="font-semibold">&lt; 8 seconds</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Text Recognition</span>
-                    <span className="font-semibold">96.8%</span>
+                    <span className="text-muted-foreground">OCR Accuracy</span>
+                    <span className="font-semibold">95%+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Fraud Detection</span>
-                    <span className="font-semibold">98.4%</span>
+                    <span className="text-muted-foreground">Forgery Detection</span>
+                    <span className="font-semibold">99.7%</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">System Availability</span>
-                    <span className="font-semibold">99.97%</span>
+                    <span className="text-muted-foreground">Uptime SLA</span>
+                    <span className="font-semibold">99.9%</span>
                   </div>
                 </CardContent>
               </Card>

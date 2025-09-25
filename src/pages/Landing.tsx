@@ -29,10 +29,10 @@ const Landing = () => {
   ];
 
   const stats = [
-    { value: "98.4%", label: "Detection Accuracy" },
-    { value: "6.2s", label: "Average Processing Time" },
-    { value: "2.8M+", label: "Documents Processed" },
-    { value: "420+", label: "Verified Institutions" }
+    { value: "99.7%", label: "Accuracy Rate" },
+    { value: "< 8s", label: "Average Verification Time" },
+    { value: "1M+", label: "Certificates Verified" },
+    { value: "500+", label: "Partner Institutions" }
   ];
 
   return (
@@ -46,7 +46,7 @@ const Landing = () => {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-6 py-2 text-sm text-white backdrop-blur-sm mb-8">
               <Shield className="h-4 w-4 mr-2" />
-              Trusted by Universities & Government Agencies
+              Trusted by 500+ Institutions
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
@@ -57,8 +57,8 @@ const Landing = () => {
             </h1>
             
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Combat academic fraud with advanced document authentication. 
-              Secure your hiring process with instant, reliable certificate verification.
+              Upload a certificate. Get a trusted verdict. Protect hiring and public programs 
+              with our AI-powered verification platform.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -151,18 +151,18 @@ const Landing = () => {
               {[
                 {
                   step: "01",
-                  title: "Document Upload",
-                  description: "Secure upload supporting multiple formats with automatic preprocessing"
+                  title: "Upload Certificate",
+                  description: "Drag and drop your PDF or image file for instant processing"
                 },
                 {
                   step: "02", 
-                  title: "Multi-Layer Verification",
-                  description: "Advanced algorithms analyze document authenticity and cross-reference databases"
+                  title: "AI Analysis",
+                  description: "Our OCR and ML systems extract data and detect potential forgeries"
                 },
                 {
                   step: "03",
-                  title: "Comprehensive Report",
-                  description: "Detailed verification results with forensic analysis and audit trail"
+                  title: "Get Results",
+                  description: "Receive instant verification with detailed analysis and blockchain proof"
                 }
               ].map((step, index) => (
                 <div key={index} className="text-center relative">
@@ -192,8 +192,8 @@ const Landing = () => {
             Ready to Verify Certificates?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Join leading organizations worldwide in building trust through verified credentials. 
-            Protect your institution's reputation with enterprise-grade document authentication.
+            Join hundreds of organizations using ACADEMIX to protect their hiring 
+            and admission processes from fraudulent certificates.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
