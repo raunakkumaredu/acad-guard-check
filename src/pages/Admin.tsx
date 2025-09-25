@@ -11,41 +11,41 @@ import Header from "@/components/Header";
 const Admin = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Mock data for admin dashboard
+  // Dashboard analytics data
   const stats = [
-    { title: "Total Verifications", value: "2,847", change: "+12%" },
-    { title: "Suspicious Cases", value: "142", change: "+5%" },
-    { title: "Forged Detected", value: "23", change: "-8%" },
-    { title: "Avg Response Time", value: "6.2s", change: "-15%" }
+    { title: "Documents Processed", value: "8,247", change: "+18%" },
+    { title: "Under Review", value: "89", change: "-12%" },
+    { title: "Fraud Detected", value: "34", change: "+2%" },
+    { title: "Processing Time", value: "5.8s", change: "-22%" }
   ];
 
   const pendingReviews = [
     {
-      id: "VER-2024-001240",
-      studentName: "Arjun Patel",
-      certificateId: "GJ-2022-78901",
-      institution: "Gujarat University",
-      uploadTime: "2024-01-15 15:30:25",
-      confidence: 65,
-      reason: "Low OCR confidence on seal"
+      id: "DOC-2025-003847",
+      studentName: "Sarah Chen",
+      certificateId: "MIT-2023-CS-4829",
+      institution: "Massachusetts Institute of Technology",
+      uploadTime: "2025-01-15 14:22:18",
+      confidence: 67,
+      reason: "Seal verification requires manual review"
     },
     {
-      id: "VER-2024-001241", 
-      studentName: "Kavya Nair",
-      certificateId: "KL-2021-56789",
-      institution: "Kerala Technical University",
-      uploadTime: "2024-01-15 15:45:12",
-      confidence: 58,
-      reason: "Inconsistent font formatting"
+      id: "DOC-2025-003848", 
+      studentName: "Michael Rodriguez",
+      certificateId: "UCB-2022-EE-7543",
+      institution: "University of California, Berkeley",
+      uploadTime: "2025-01-15 14:38:45",
+      confidence: 71,
+      reason: "Date format inconsistency detected"
     },
     {
-      id: "VER-2024-001242",
-      studentName: "Rahul Singh",
-      certificateId: "RJ-2020-34567",
-      institution: "Rajasthan University",
-      uploadTime: "2024-01-15 16:15:33",
-      confidence: 72,
-      reason: "Photo mismatch detected"
+      id: "DOC-2025-003849",
+      studentName: "Priya Sharma",
+      certificateId: "IIT-2021-ME-2156",
+      institution: "Indian Institute of Technology Delhi",
+      uploadTime: "2025-01-15 15:02:11",
+      confidence: 64,
+      reason: "Signature pattern requires verification"
     }
   ];
 
@@ -277,10 +277,10 @@ const Admin = () => {
                 <CardContent>
                   <div className="space-y-4">
                     {[
-                      { name: "Rajasthan University", count: 847 },
-                      { name: "Gujarat University", count: 623 },
-                      { name: "Kerala Technical University", count: 512 },
-                      { name: "Maharashtra Institute of Technology", count: 445 }
+                      { name: "University of California System", count: 1247 },
+                      { name: "State University of New York", count: 983 },
+                      { name: "Texas A&M University System", count: 756 },
+                      { name: "University of Illinois System", count: 642 }
                     ].map((institution, index) => (
                       <div key={index} className="flex items-center justify-between">
                         <span className="text-sm text-foreground">{institution.name}</span>
