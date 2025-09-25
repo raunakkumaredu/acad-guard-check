@@ -260,10 +260,9 @@ const HowItWorks = () => {
             <Button 
               asChild 
               size="lg" 
-              variant="outline" 
-              className="border-white/30 text-white hover:bg-white/10"
+              className="bg-white/10 text-white border border-white/20 hover:bg-white/20 backdrop-blur-sm"
             >
-              <Link to="/admin">
+              <Link to="/admin-login">
                 Access Admin Panel
               </Link>
             </Button>
