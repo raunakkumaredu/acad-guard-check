@@ -7,6 +7,7 @@ import Landing from "./pages/Landing";
 import Verify from "./pages/Verify";
 import Result from "./pages/Result";
 import Admin from "./pages/Admin";
+import AdminLogin from "./pages/AdminLogin";
 import HowItWorks from "./pages/HowItWorks";
 import NotFound from "./pages/NotFound";
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/verify" element={<Verify />} />
           <Route path="/result/:status" element={<Result />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
